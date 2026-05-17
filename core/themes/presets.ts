@@ -2,8 +2,8 @@ import { Theme } from "./types";
 
 export const themePresets: Record<string, Theme> = {
   dark: {
-    background: "#0b111e",
-    border: "#1F6FEB",
+    background: "#0D1117",
+    border: "#94a3b8",
     primary: "#1F6FEB",
     accent: "#3b82f6",
     text: "#ffffff",

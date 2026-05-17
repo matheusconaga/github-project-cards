@@ -1,8 +1,5 @@
 import satori from "satori";
 
-import fs from "fs";
-import path from "path";
-
 import { NextRequest } from "next/server";
 
 import { Card } from "@/components/Card/Card";
@@ -12,6 +9,8 @@ import { getRepo } from "@/core/github/get-repo";
 import { parseConfig } from "@/core/config/parse-config";
 
 import { resolveTheme } from "@/core/themes/resolve-theme";
+
+import { loadFont } from "@/core/fonts/fonts";
 
 import { getLocale } from "@/core/locale";
 
@@ -37,7 +36,7 @@ export async function GET(req: NextRequest) {
   // IMAGE
   const imageUrl =
     config.image ??
-    `https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXVmbHV4cDRjNmN2bjFjcmx6OWY2eGVsMnZ1a3pyeXZlcGZybWZxMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PIBuZutkhuKqV09TEf/giphy.gif`;
+    "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXVmbHV4cDRjNmN2bjFjcmx6OWY2eGVsMnZ1a3pyeXZlcGZybWZxMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PIBuZutkhuKqV09TEf/giphy.gif";
 
   let imageBase64 = "";
 
@@ -57,23 +56,28 @@ export async function GET(req: NextRequest) {
     imageBase64 = "";
   }
 
-  // FONT
-  const fontPath = path.join(
-    process.cwd(),
-    "public/fonts/Inter.ttf"
-  );
+  // FONTS
+  const regularFont = loadFont("Inter-Regular.ttf");
+  const mediumFont = loadFont("Inter-Medium.ttf");
+  const boldFont = loadFont("Inter-Bold.ttf");
 
-  const fontData = fs.readFileSync(fontPath);
+  // DESCRIPTION
+  const rawDescription =
+    config.description ??
+    repo.description ??
+    "";
+
+  const description =
+    rawDescription.length > 110
+      ? `${rawDescription.slice(0, 110)}...`
+      : rawDescription;
 
   // RENDER
   const svg = await satori(
     Card({
       title: repo.name,
 
-      description:
-        config.description ??
-        repo.description ??
-        "",
+      description,
 
       stars: repo.stargazers_count,
 
@@ -90,9 +94,7 @@ export async function GET(req: NextRequest) {
       techs:
         config.techs?.length
           ? config.techs.slice(0, 3)
-          : [
-            repo.language ?? "TypeScript",
-          ],
+          : [repo.language ?? "TypeScript"],
 
       showStars:
         config.showStars ?? true,
@@ -111,18 +113,27 @@ export async function GET(req: NextRequest) {
       },
     }),
     {
-      width: 850,
+      width: 420,
 
-      height: 360,
+      height: 230,
 
       fonts: [
         {
           name: "Inter",
-
-          data: fontData,
-
+          data: regularFont,
+          weight: 400,
+          style: "normal",
+        },
+        {
+          name: "Inter",
+          data: mediumFont,
+          weight: 500,
+          style: "normal",
+        },
+        {
+          name: "Inter",
+          data: boldFont,
           weight: 700,
-
           style: "normal",
         },
       ],
