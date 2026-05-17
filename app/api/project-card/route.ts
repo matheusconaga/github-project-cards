@@ -42,9 +42,13 @@ export async function GET(req: NextRequest) {
   let imageBase64 = "";
 
   try {
-    const imageBuffer = await fetch(imageUrl).then((res) =>
-      res.arrayBuffer()
-    );
+    const response = await fetch(imageUrl);
+
+    if (!response.ok) {
+      throw new Error("Invalid image");
+    }
+
+    const imageBuffer = await response.arrayBuffer();
 
     imageBase64 = `data:image/png;base64,${Buffer.from(
       imageBuffer
@@ -84,11 +88,11 @@ export async function GET(req: NextRequest) {
       locale: config.locale,
 
       techs:
-  config.techs?.length
-    ? config.techs.slice(0, 3)
-    : [
-        repo.language ?? "TypeScript",
-      ],
+        config.techs?.length
+          ? config.techs.slice(0, 3)
+          : [
+            repo.language ?? "TypeScript",
+          ],
 
       showStars:
         config.showStars ?? true,

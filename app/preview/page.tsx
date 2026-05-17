@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const themes = ["dark", "light", "github", "dracula"];
 
@@ -14,6 +14,12 @@ export default function PreviewPage() {
   const [techs, setTechs] = useState("React, TypeScript, Node.js");
   const [showStars, setShowStars] = useState(true);
   const [showForks, setShowForks] = useState(true);
+
+  const [baseUrl, setBaseUrl] = useState("");
+
+  useEffect(() => {
+    setBaseUrl(window.location.origin);
+  }, []);
 
   const previewUrl = useMemo(() => {
     const params = new URLSearchParams();
@@ -33,8 +39,9 @@ export default function PreviewPage() {
     params.set("showStars", String(showStars));
     params.set("showForks", String(showForks));
 
-    return `/api/project-card?${params.toString()}`;
-  }, [repo, lang, theme, image, techs, showStars, showForks]);
+    return `${baseUrl}/api/project-card?${params.toString()}`;
+    
+  }, [baseUrl, repo, lang, theme, image, techs, showStars, showForks]);
 
   const markdown = `![Project Card](${previewUrl})`;
 
@@ -273,7 +280,7 @@ export default function PreviewPage() {
                 value={previewUrl}
                 style={{
                   width: "100%",
-                  flex: 1, 
+                  flex: 1,
                   minHeight: "185px",
 
                   resize: "none",
