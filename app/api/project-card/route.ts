@@ -36,7 +36,7 @@ export async function GET(req: NextRequest) {
   // IMAGE
   const imageUrl =
     config.image ??
-    "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXVmbHV4cDRjNmN2bjFjcmx6OWY2eGVsMnZ1a3pyeXZlcGZybWZxMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PIBuZutkhuKqV09TEf/giphy.gif";
+    "https://res.cloudinary.com/dn1yfqhqy/image/upload/v1779040026/notfound_vvsr5q.png";
 
   let imageBase64 = "";
 

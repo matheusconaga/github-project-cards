@@ -6,11 +6,9 @@ const themes = ["dark", "light", "github", "dracula"];
 
 export default function PreviewPage() {
   const [repo, setRepo] = useState("matheusconaga/projeto_patrimoniario");
-  const [lang, setLang] = useState("pt");
+  const [lang, setLang] = useState("en");
   const [theme, setTheme] = useState("github");
-  const [image, setImage] = useState(
-    "https://raw.githubusercontent.com/matheusconaga/projeto_patrimoniario/main/assets/patrimoniario.png",
-  );
+  const [image, setImage] = useState("https://res.cloudinary.com/dn1yfqhqy/image/upload/v1779040026/notfound_vvsr5q.png");
   const [techs, setTechs] = useState("React, TypeScript, Node.js");
   const [showStars, setShowStars] = useState(true);
   const [showForks, setShowForks] = useState(true);
@@ -40,7 +38,7 @@ export default function PreviewPage() {
     params.set("showForks", String(showForks));
 
     return `${baseUrl}/api/project-card?${params.toString()}`;
-    
+
   }, [baseUrl, repo, lang, theme, image, techs, showStars, showForks]);
 
   const markdown = `![Project Card](${previewUrl})`;
@@ -89,7 +87,7 @@ export default function PreviewPage() {
               fontWeight: 800,
             }}
           >
-            GitHub Card Builder
+            GitHub Project Card Builder
           </h1>
         </div>
 
@@ -281,7 +279,7 @@ export default function PreviewPage() {
                 style={{
                   width: "100%",
                   flex: 1,
-                  minHeight: "185px",
+                  minHeight: "155px",
 
                   resize: "none",
                   background: "#020617",
