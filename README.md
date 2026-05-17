@@ -6,7 +6,7 @@ Generate beautiful and customizable GitHub project cards for your README, portfo
 
 <div align="center">
   
-  ![Project Card](https://github-project-cards.vercel.app/api/project-card?repo=matheusconaga%2Fportifollio&lang=en&theme=dark&image=https%3A%2F%2Fraw.githubusercontent.com%2Fmatheusconaga%2Fportifollio%2Fmain%2Fassets%2Fhome.png&techs=React%2C+TypeScript%2C+Tailwind&showStars=true&showForks=true)
+  ![Project Card](https://github-project-cards.vercel.app/api/project-card?repo=matheusconaga%2Fgithub-project-cards&lang=en&theme=dark&image=https%3A%2F%2Fraw.githubusercontent.com%2Fmatheusconaga%2Fgithub-project-cards%2Fmain%2Fpublic%2Fproject-card-deploy.png&techs=React%2C+TypeScript%2C+Tailwind&showStars=true&showForks=true)
   
 </div>
 
@@ -48,10 +48,10 @@ The project includes a live preview builder where users can customize their card
 
 | Theme | Preview |
 | :--- | :--- |
-| **Dark** | ![GitHub Project Card preview in Dark theme](https://github-project-cards.vercel.app/api/project-card?repo=matheusconaga%2Fportifollio&lang=en&theme=dark&image=https%3A%2F%2Fraw.githubusercontent.com%2Fmatheusconaga%2Fportifollio%2Fmain%2Fassets%2Fhome.png&techs=React%2C+TypeScript%2C+Tailwind&showStars=true&showForks=true) |
-| **Light** | ![GitHub Project Card preview in Light theme](https://github-project-cards.vercel.app/api/project-card?repo=matheusconaga%2Fportifollio&lang=en&theme=light&image=https%3A%2F%2Fraw.githubusercontent.com%2Fmatheusconaga%2Fportifollio%2Fmain%2Fassets%2Fhome.png&techs=React%2C+TypeScript%2C+Tailwind&showStars=true&showForks=true) |
-| **GitHub** | ![GitHub Project Card preview in GitHub theme](https://github-project-cards.vercel.app/api/project-card?repo=matheusconaga%2Fportifollio&lang=en&theme=github&image=https%3A%2F%2Fraw.githubusercontent.com%2Fmatheusconaga%2Fportifollio%2Fmain%2Fassets%2Fhome.png&techs=React%2C+TypeScript%2C+Tailwind&showStars=true&showForks=true) |
-| **Dracula** | ![GitHub Project Card preview in Dracula theme](https://github-project-cards.vercel.app/api/project-card?repo=matheusconaga%2Fportifollio&lang=en&theme=dracula&image=https%3A%2F%2Fraw.githubusercontent.com%2Fmatheusconaga%2Fportifollio%2Fmain%2Fassets%2Fhome.png&techs=React%2C+TypeScript%2C+Tailwind&showStars=true&showForks=true) |
+| **Dark** | ![GitHub Project Card preview in Dark theme](https://github-project-cards.vercel.app/api/project-card?repo=matheusconaga%2Fgithub-project-cards&lang=en&theme=dark&image=https%3A%2F%2Fraw.githubusercontent.com%2Fmatheusconaga%2Fgithub-project-cards%2Fmain%2Fpublic%2Fproject-card-deploy.png&techs=React%2C+TypeScript%2C+Tailwind&showStars=true&showForks=true) |
+| **Light** | ![GitHub Project Card preview in Light theme](https://github-project-cards.vercel.app/api/project-card?repo=matheusconaga%2Fgithub-project-cards&lang=en&theme=light&image=https%3A%2F%2Fraw.githubusercontent.com%2Fmatheusconaga%2Fgithub-project-cards%2Fmain%2Fpublic%2Fproject-card-deploy.png&techs=React%2C+TypeScript%2C+Tailwind&showStars=true&showForks=true) |
+| **GitHub** | ![GitHub Project Card preview in GitHub theme](https://github-project-cards.vercel.app/api/project-card?repo=matheusconaga%2Fgithub-project-cards&lang=en&theme=github&image=https%3A%2F%2Fraw.githubusercontent.com%2Fmatheusconaga%2Fgithub-project-cards%2Fmain%2Fpublic%2Fproject-card-deploy.png&techs=React%2C+TypeScript%2C+Tailwind&showStars=true&showForks=true) |
+| **Dracula** | ![GitHub Project Card preview in Dracula theme](https://github-project-cards.vercel.app/api/project-card?repo=matheusconaga%2Fgithub-project-cards&lang=en&theme=dracula&image=https%3A%2F%2Fraw.githubusercontent.com%2Fmatheusconaga%2Fgithub-project-cards%2Fmain%2Fpublic%2Fproject-card-deploy.png&techs=React%2C+TypeScript%2C+Tailwind&showStars=true&showForks=true) |
 
 </div>
 
