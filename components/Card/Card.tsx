@@ -44,7 +44,7 @@ export function Card({
         width: "410px",
         height: "230px",
         backgroundColor: theme.background,
-        border: `2px solid ${theme.border}`,
+        border: `1px solid ${theme.border}`,
         borderRadius: "12px",
         padding: "16px",
         fontFamily: "Inter",

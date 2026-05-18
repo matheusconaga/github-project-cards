@@ -4,7 +4,7 @@ export const themePresets: Record<string, Theme> = {
   dark: {
     background: "#0D1117",
     border: "#94a3b8",
-    primary: "#1F6FEB",
+    primary: "#59A6EC",
     accent: "#3b82f6",
     text: "#ffffff",
     muted: "#94a3b8",
