@@ -6,7 +6,7 @@
 <h1 align="center">🎴 GitHub Project Cards</h1>
 
 <p align="center">
-Generate beautiful and customizable GitHub project cards for your README, portfolio or profile.
+Gere cartões de projetos do GitHub bonitos e customizáveis para o seu README, portfólio ou perfil.
 </p>
 
 <div align="center">
@@ -31,25 +31,25 @@ Generate beautiful and customizable GitHub project cards for your README, portfo
 
 ---
 
-## 📌 About
+## 📌 Sobre
 
-GitHub Project Cards is an open source project that generates customizable SVG cards for GitHub repositories.
+O GitHub Project Cards é um projeto de código aberto (open-source) que gera cartões SVG customizáveis para repositórios do GitHub.
 
-You can use the generated cards inside:
+Você pode usar os cartões gerados dentro de:
 
-- GitHub READMEs
-- Portfolio websites
-- Profile pages
-- Documentation pages
-- Personal showcases
+- READMEs do GitHub
+- Sites de portfólio
+- Páginas de perfil
+- Páginas de documentação
+- Vitrines pessoais
 
-The project includes a live preview builder where users can customize their cards in real time and copy the final markdown instantly.
+O projeto inclui um construtor de visualização ao vivo (live preview) onde os usuários podem customizar seus cartões em tempo real e copiar o markdown final instantaneamente.
 
-## 🎨 Themes
+## 🎨 Temas
 
 <div>
 
-| Theme | Preview |
+| Tema | Pré-visualização |
 | :--- | :--- |
 | **Dark** | ![GitHub Project Card preview in Dark theme](https://github-project-cards.vercel.app/api/project-card?repo=matheusconaga%2Fgithub-project-cards&lang=en&theme=dark&image=https%3A%2F%2Fraw.githubusercontent.com%2Fmatheusconaga%2Fgithub-project-cards%2Fmain%2Fpublic%2Fproject-card-deploy.png&techs=React%2C+TypeScript%2C+Tailwind&showStars=true&showForks=true) |
 | **Light** | ![GitHub Project Card preview in Light theme](https://github-project-cards.vercel.app/api/project-card?repo=matheusconaga%2Fgithub-project-cards&lang=en&theme=light&image=https%3A%2F%2Fraw.githubusercontent.com%2Fmatheusconaga%2Fgithub-project-cards%2Fmain%2Fpublic%2Fproject-card-deploy.png&techs=React%2C+TypeScript%2C+Tailwind&showStars=true&showForks=true) |
@@ -58,29 +58,28 @@ The project includes a live preview builder where users can customize their card
 
 </div>
 
-## 🌍 Supported Locales
+## 🌍 Idiomas Suportados
 
 <p>
   <img src="https://img.shields.io/badge/PT--BR-009739?style=for-the-badge" alt="PT-BR"/>
   <img src="https://img.shields.io/badge/ENGLISH-1D63ED?style=for-the-badge" alt="English"/>
 </p>
 
-## 🧩 Customization
+## 🧩 Customização
 
-### Supported Parameters
+### Parâmetros Suportados
 
-| Parameter | Description |
+| Parâmetro | Descrição |
 |---|---|
-| `repo` | GitHub repository |
-| `theme` | Card theme |
-| `lang` | Locale language |
-| `image` | Custom image |
-| `techs` | Custom technologies |
-| `showStars` | Show repository stars |
-| `showForks` | Show repository forks |
+| `repo` | Repositório do GitHub |
+| `theme` | Tema do cartão |
+| `lang` | Idioma/Localidade |
+| `image` | Imagem personalizada |
+| `techs` | Tecnologias personalizadas |
+| `showStars` | Mostrar estrelas do repositório |
+| `showForks` | Mostrar forks do repositório |
 
-
-## 🛠️ Usage
+## 🛠️ Como Usar
 
 ```md
 ![Project Card](https://github-project-cards.vercel.app/api/project-card?repo=username/repository)
@@ -88,7 +87,7 @@ The project includes a live preview builder where users can customize their card
 
 ## 🚀 Deploy
 
-Deploy your own version easily on Vercel.
+Faça o deploy da sua própria versão facilmente na Vercel.
 
 <p align="left">
   <img src="https://img.shields.io/github/license/matheusconaga/github-project-cards?style=for-the-badge"/>
@@ -97,25 +96,26 @@ Deploy your own version easily on Vercel.
   <img src="https://img.shields.io/github/issues/matheusconaga/github-project-cards?style=for-the-badge"/>
 </p>
 
-## 👥 Users
-People and developers using GitHub Project Cards:
+## 👥 Usuários
+Pessoas e desenvolvedores que usam o GitHub Project Cards:
 <p align="left">
   <a href="https://github.com/matheusconaga">
     <img src="https://github.com/matheusconaga.png" width="90px" alt="matheusconaga"/>
   </a>
 </p>
-Want to appear here?  
+Quer aparecer aqui?
 
-Open a Pull Request adding your profile image and GitHub link.
+Abra um Pull Request adicionando sua foto de perfil e o link do GitHub.
 
-## 🤝 Contributing
-Contributions are always welcome! Please see our `CONTRIBUTING.md` file for detailed instructions on how to set up the project locally and submit your changes.
+## 🤝 Contribuição
 
-Any contribution, big or small, is appreciated 💙
+Contribuições são sempre bem-vindas! Por favor, veja o nosso arquivo `CONTRIBUTING.pt.md` para instruções detalhadas sobre como configurar o projeto localmente e enviar suas alterações.
 
-## 📄 License
-This project is licensed under the MIT License.  
-See the `LICENSE` file for more details.
+Qualquer contribuição, grande ou pequena, é muito apreciada 💙
 
-## 💙 Support
-If you like this project, give it a ⭐ and share it with friends!
+## 📄 Licença
+Este projeto está sob a licença MIT.
+Veja o arquivo `LICENSE` para mais detalhes.
+
+## 💙 Apoie
+Se você gostou deste projeto, deixe uma ⭐ e compartilhe com os amigos!
