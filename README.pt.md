@@ -11,7 +11,7 @@ Gere cartões de projetos do GitHub bonitos e customizáveis para o seu README, 
 
 <div align="center">
   
- ![Project Card](https://github-project-cards.vercel.app/api/project-card?repo=matheusconaga%2Fgithub-project-cards&lang=en&theme=github&image=https%3A%2F%2Fraw.githubusercontent.com%2Fmatheusconaga%2Fgithub-project-cards%2Fmain%2Fpublic%2Fproject-card-deploy.png&techs=Next%2C+React%2C+Typescript&showStars=true&showForks=true)
+<img src="https://res.cloudinary.com/dn1yfqhqy/image/upload/v1779145556/apresentacaogif_xo27sf.gif" width="800px">
   
 </div>
 
